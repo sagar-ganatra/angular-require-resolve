@@ -1,0 +1,32 @@
+<div class="container login"
+     ng-controller="registerController">
+
+    <h4>Register</h4>
+
+    <form>
+        <label for="username">Username</label>
+        <input type="text"
+               id="userName"
+               ng-model="userName">
+
+        <br>
+        <label for="userPassword">Password</label>
+        <input type="password"
+               id="userPassword"
+               ng-model="userPassword">
+
+        <br>
+        <label for="emailAddress">E-Mail</label>
+        <input type="email"
+               id="emailAddress"
+               ng-model="email">
+
+        <br>
+        <br>
+        <button type="submit"
+                ng-click="submitForm()">
+            Submit
+        </button>
+
+    </form>
+</div>

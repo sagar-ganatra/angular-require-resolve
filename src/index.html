@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" ng-app="routeResolve">
+<head>
+    <meta charset="utf-8">
+    <title>Angular Lazy Loading</title>
+    <style>
+
+        label {
+            width: 100px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .main-content {
+            margin-top: 40px;
+        }
+
+        .container {
+            width: 980px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .login {
+            margin: 10px auto;
+            padding: 20px;
+            width: 490px;
+            border: 1px solid #C1C1C1;
+        }
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+<div class="main-content">
+
+    <div class="container home"
+         ng-controller="homeController">
+
+        <button class="btn btn-primary"
+                ng-click="showComponent('login')">
+            Login
+        </button>
+        <button class="btn btn-primary"
+                ng-click="showComponent('register')">
+            Register
+        </button>
+
+    </div>
+
+    <div ng-view></div>
+</div>
+
+
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-route/angular-route.min.js"></script>
+<script src="../bower_components/requirejs/require.js"></script>
+<!-- <script src="../bower_components/angular-mocks/angular-mocks.js"></script> -->
+
+<script src="app.js"></script>
+<script src="pages/home/controllers/homeController.js"></script>
+
+</body>
+</html>

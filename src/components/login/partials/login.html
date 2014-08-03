@@ -1,0 +1,26 @@
+<div class="container login"
+     ng-controller="loginController">
+
+    <h4>Login</h4>
+
+    <form>
+        <label for="username">Username</label>
+        <input type="text"
+               id="username"
+               ng-model="userName">
+
+        <br>
+        <label for="userPassword">Password</label>
+        <input type="password"
+               id="userPassword"
+               ng-model="userPassword">
+
+        <br>
+        <br>
+        <button type="submit"
+                ng-click="submitForm()">
+            Submit
+        </button>
+
+    </form>
+</div>
