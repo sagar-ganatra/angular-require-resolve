@@ -12,13 +12,6 @@ window.app.config([
     '$provide',
     function ($routeProvider, $controllerProvider, $compileProvider, $filterProvider, $provide) {
 
-        var componentsToLoad = function () {
-            console.log(arguments);
-
-            return {
-
-            }
-        };
         $routeProvider
             .when('/login', {
                 templateUrl: 'components/login/partials/login.html',
